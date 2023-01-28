@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>BELAJAR 1 AKBAR</title>
+    <style>
+      /* font-family: 'Fraunces', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Roboto', sans-serif; */
+
+      /* font-family: 'Fraunces', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Roboto', sans-serif; */
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: hsl(30, 38%, 92%);
+        font-size: 14px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        margin: 30px auto;
+        padding: 0 30px;
+      }
+
+      .grid {
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .img img {
+        max-width: 100%;
+        display: inherit;
+      }
+
+      .card {
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      h6.pro-cat {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 13px;
+        color: hsl(228, 12%, 48%);
+        font-weight: 500;
+      }
+
+      h2.pro-name {
+        font-family: "Fraunces", serif;
+        font-size: 34px;
+        line-height: 1em;
+        color: hsl(212, 21%, 14%);
+      }
+
+      p.pro-des {
+        color: hsl(228, 12%, 48%);
+        line-height: 1.6em;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+      }
+
+      p.current-price {
+        font-family: "Fraunces", serif;
+        color: hsl(158, 36%, 37%);
+        font-size: 25px;
+        padding-right: 25px;
+      }
+
+      p.old-price {
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+      }
+
+      button.ctn {
+        background-color: hsl(158, 36%, 37%);
+        border: none;
+        padding: 12px 0;
+        border-radius: 12px;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+      }
+
+      button.ctn:hover {
+        background-color: hsl(158, 36%, 23%);
+      }
+
+      button.ctn img {
+        padding-right: 7px;
+      }
+
+      @media only screen and (max-width: 628px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .img img {
+          max-height: 450px;
+          width: 100%;
+          object-fit: cover;
+        }
+        .card-container {
+          display: block;
+        }
+        h6.pro-cat {
+          padding-bottom: 23px;
+        }
+        h2.pro-name {
+          padding-bottom: 23px;
+        }
+        p.pro-des {
+          padding-bottom: 23px;
+        }
+        .price {
+          padding-bottom: 23px;
+        }
+      }
+      @media only screen and (max-width: 375px) {
+        .container {
+          margin: 15px auto;
+          padding: 0 15px;
+        }
+        .img img {
+          max-height: 290px;
+          width: 100%;
+          object-fit: cover;
+        }
+        .card-content {
+          padding: 24px;
+        }
+        h6.pro-cat {
+          padding-bottom: 16px;
+        }
+        h2.pro-name {
+          padding-bottom: 16px;
+          font-size: 28px;
+        }
+        p.pro-des {
+          padding-bottom: 16px;
+          font-size: 12px;
+        }
+        .price {
+          padding-bottom: 16px;
+        }
+        p.current-price {
+          font-size: 23px;
+        }
+        button.ctn {
+          padding: 12px 0;
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="img">
+          <img src="images/image-product-desktop.jpg" alt="" />
+        </div>
+        <div class="card">
+          <h6 class="pro-cat">Perfume</h6>
+          <h2 class="pro-name">Gabrielle Essence Eau De Parfum</h2>
+          <p class="pro-des">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <p class="current-price">$149.99</p>
+            <p class="old-price">$169.99</p>
+          </div>
+          <button class="ctn">
+            <img src="images/icon-cart.svg" alt="icon-cart" />Add to Cart
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Riki Hidayat</a>.
+      </div>
+    </div>
+  </body>
+</html>
